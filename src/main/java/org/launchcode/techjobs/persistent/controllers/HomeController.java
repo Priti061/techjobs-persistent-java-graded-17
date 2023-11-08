@@ -62,8 +62,6 @@ public class HomeController {
 
             List employers = (List<Employer>) employerRepository.findAll();
             model.addAttribute("employers", employers);
-            //model.addAttribute("employers", employerRepository.findAll());
-            //model.addAttribute("skills", skillRepository.findAll());
 
             return "add";
         }
